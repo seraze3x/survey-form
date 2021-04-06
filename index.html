@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/survey_form.css">
+    </head>
+
+    <body id="surveyform">
+        
+        <h1 id="title">Software Development Survey</h1>
+        <p id="description"><em>This is a survey where you can give advice to new Software Developers</em></p>
+        <form id="survey-form">
+            
+            <label id="name-label">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Your Name" ></input><br>
+            <label id="email-label">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Your Email" ></input><br>
+            <label id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="0" max="100" placeholder="Age"></input><br>
+                
+            <label for="role">Which option best describes your current role?</label>
+                <select id="dropdown" name="role">
+                  <option value="Student">Student</option>
+                  <option value="Full Time Job">Full Time Job</option>
+                  <option value="Full Time Learner">Full Time Learner</option>
+                  <option value="Prefer not to say">Prefer not to say</option>
+                </select><br>
+            <p>What is your role in Software Development?</p>
+            <input type="radio" id="Front-End" name="RoleS" value="Front-End">
+                <label for="Front-End">Front-End</label><br>
+            <input type="radio" id="Back-End" name="RoleS" value="Back-End">
+                <label for="Back-End">Back-End</Back-End></label><br>
+            <input type="radio" id="Fullstack" name="RoleS" value="Fullstack">
+                <label for="Fullstack">Fullstack</label><br>
+            <input type="radio" id="Other" name="RoleS" value="Other">
+                <label for="Other">Other</label><br>
+            
+            <p>What languages do you recommend for Fullstack Development?</p>
+            <input type="checkbox" id="Python" name="Python" value="Python">
+                <label for="Python">Python</label><br>
+            <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+                <label for="Javascript"> Javascript</label><br>
+            <input type="checkbox" id="Java" name="Java" value="Java">
+                <label for="Java"> Java</label><br>
+            <input type="checkbox" id="C#" name="C#" value="C#">
+                <label for="C#"> C#</label><br>
+            <input type="checkbox" id="C++" name="C++" value="C++">
+                <label for="C++"> C++</label><br>
+            <input type="checkbox" id="C" name="C" value="C">
+                <label for="C"> C</label><br>
+            <input type="checkbox" id="Ruby" name="Ruby" value="Ruby">
+                <label for="Ruby"> Ruby</label><br>
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                <label for="PHP"> PHP</label><br>
+            
+            <label for="advice">Any advice you can give for people who just started Software Development</label><br>
+                <textarea id="advice" name="advice" rows="4" cols="50">
+                
+                </textarea><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+
+
+</html>
